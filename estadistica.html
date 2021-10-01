@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadística</title>
+</head>
+<body>
+    <header>
+        <h1>Estadística básica</h1>
+        <div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./figuras.html">Figuras Geométricas</a>
+                    </li>
+                    <li>
+                        <a href="./descuentos.html">Descuentos</a>
+                    </li>
+                    <li>
+                        <a href="./salarios.html">Salarios</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>
+                Media aritmética
+            </h2>
+            <form>
+                <label for="media">Saca la media aritmética (promedio) de una lista de números</label> <br/>
+                <input type="text" placeholder="Lista de números" id="media"> <br />
+                <button type="button" onclick="media()">Calcular</button>
+            </form>
+            <span id="respuesta_media">
+            </span>
+        </section>
+        <section>
+            <h2>
+                Moda
+            </h2>
+            <form>
+                <label for="moda">Saca la moda de una lista de números</label> <br/>
+                <input type="text" placeholder="Lista de números" id="moda"> <br />
+                <button type="button" onclick="moda()">Calcular</button>
+            </form>
+            <span id="respuesta_moda">
+            </span>
+        </section>
+        <section>
+            <h2>
+                Mediana
+            </h2>
+            <form>
+                <label for="mediana">Saca la mediana de una lista de números</label> <br/>
+                <input type="text" placeholder="Lista de números" id="mediana"> <br />
+                <button type="button" onclick="mediana()">Calcular</button>
+            </form>
+            <span id="respuesta_mediana">
+            </span>
+        </section>
+    </main>
+    <script src="./estadistica.js"></script>
+</body>
+</html>

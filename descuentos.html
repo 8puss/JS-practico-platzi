@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuentos</title>
+</head>
+<body>
+    <header>
+        <h1>Porcentajes y descuentos</h1>
+        <div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./figuras.html">Figuras Geométricas</a>
+                    </li>
+                    <li>
+                        <a href="./estadistica.html">Estadística</a>
+                    </li>
+                    <li>
+                        <a href="./salarios.html">Salarios</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <form >
+                <label for="precio_original">
+                    Aplica un descuento y mira cuánto pagarás:
+                </label> <br/>
+                <input type="number" placeholder="Pecio original" id="precio_original" /> <br/>
+                <input type="number" placeholder="Descuento" id="descuento" /> <br />
+                <button type="button" onclick="calcularDescuento()">Calcular</button>
+            </form>
+            <span id="answer"></span>
+        </section>
+    </main>
+    <script src="./descuentos.js"></script>
+</body>
+</html>
