@@ -6,10 +6,11 @@
 }
 
 html {
-    color: rgb(44, 43, 41);
+    background: rgb(44, 43, 41); 
     font-size: 62.5%;
 }
 
+/*cuerpo*/
 body {
     padding: 5rem;
     font-size: 2rem;
@@ -27,12 +28,14 @@ body {
 
 .container h1 {
     grid-column: 2 / 3;
+    text-align: center;
 }
 
 .container .nav-container {
     grid-column: 2 / 3;
     grid-row: 2 / 2;
     display: inline;
+    text-align: center;
 }
 
 .nav-container-item {
@@ -47,6 +50,7 @@ ul {
 
 section {
     display: grid;
+    padding: 2rem;
     justify-content: center;
     align-content: center;
     grid-template-columns: 1fr 1fr 1fr;
@@ -65,4 +69,25 @@ section .item:nth-child(2) {
 section .item:nth-child(3) {
     grid-column: 2 / 3;
     grid-row: 3 / 3;
+}
+
+/*tarjeta de presentación*/
+
+.card-container {
+    width: 300px;
+    height: 500px;
+    background: rgb(241, 189, 15);
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    overflow: hidden;
+    text-align: center;
+    display: grid;
+}
+
+.card-container p:nth-child(3) {
+    font-size: 1.2rem;
+}
+
+.card-container img {
+    width: 100%;
 }
