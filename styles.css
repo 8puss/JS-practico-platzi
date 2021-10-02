@@ -1,0 +1,23 @@
+/*general*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    color: rgb(44, 43, 41);
+    font-size: 62.5%;
+}
+
+body {
+    padding: 4rem;
+    font-size: 2rem;
+    color: rgb(247, 194, 20);
+}
+
+.container {
+    display: flexbox;
+    justify-items: center;
+    align-items: center;
+}
