@@ -9,37 +9,49 @@
 </head>
 <body>
     <header>
-        <h1>Porcentajes y descuentos</h1>
         <div  class="container">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="./index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="./figuras.html">Figuras Geométricas</a>
-                    </li>
-                    <li>
-                        <a href="./estadistica.html">Estadística</a>
-                    </li>
-                    <li>
-                        <a href="./salarios.html">Salarios</a>
-                    </li>
-                </ul>
-            </nav>
+            <h1>Porcentajes y descuentos</h1>
+            <div class="nav-container">
+                <nav>
+                    <ul>
+                        <div class="nav-container-item">
+                            <li>
+                                <a href="./index.html">Home</a>
+                            </li>
+                        </div>
+                        <div class="nav-container-item">
+                            <li>
+                                <a href="./figuras.html">Figuras Geométricas</a>
+                            </li>
+                        </div>
+                        <div class="nav-container-item">
+                            <li>
+                                <a href="./estadistica.html">Estadística</a>
+                            </li>
+                        </div>
+                        <div class="nav-container-item">
+                            <li>
+                                <a href="./salarios.html">Salarios</a>
+                            </li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
         <section>
-            <form >
-                <label for="precio_original">
-                    Aplica un descuento y mira cuánto pagarás:
-                </label> <br/>
-                <input type="number" placeholder="Pecio original" id="precio_original" /> <br/>
-                <input type="number" placeholder="Descuento" id="descuento" /> <br />
-                <button type="button" onclick="calcularDescuento()">Calcular</button>
-            </form>
-            <span id="answer"></span>
+            <div class="item">
+                <form >
+                    <label for="precio_original">
+                        Aplica un descuento y mira cuánto pagarás:
+                    </label> <br/>
+                    <input type="number" placeholder="Pecio original" id="precio_original" /> <br/>
+                    <input type="number" placeholder="Descuento" id="descuento" /> <br />
+                    <button type="button" onclick="calcularDescuento()">Calcular</button>
+                </form>
+                <span id="answer"></span>
+            </div>
         </section>
     </main>
     <script src="./descuentos.js"></script>

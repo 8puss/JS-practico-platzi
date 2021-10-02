@@ -11,13 +11,58 @@ html {
 }
 
 body {
-    padding: 4rem;
+    padding: 5rem;
     font-size: 2rem;
     color: rgb(247, 194, 20);
+    display: grid;
 }
 
 .container {
-    display: flexbox;
-    justify-items: center;
-    align-items: center;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.container h1 {
+    grid-column: 2 / 3;
+}
+
+.container .nav-container {
+    grid-column: 2 / 3;
+    grid-row: 2 / 2;
+    display: inline;
+}
+
+.nav-container-item {
+    padding: 5px;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+    display: inline;
+}
+
+section {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+section .item:nth-child(1) {
+    grid-column: 2 / 3;
+}
+
+section .item:nth-child(2) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+section .item:nth-child(3) {
+    grid-column: 2 / 3;
+    grid-row: 3 / 3;
 }

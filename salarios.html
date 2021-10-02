@@ -9,52 +9,64 @@
 </head>
 <body>
     <header>
-        <h1>
-            Análisis salarial
-        </h1>
         <div  class="container">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="./index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="./figuras.html">Figuras Geométricas</a>
-                    </li>
-                    <li>
-                        <a href="./descuentos.html">Descuentos</a>
-                    </li>
-                    <li>
-                        <a href="./estadistica.html">Estadistica</a>
-                    </li>
-                </ul>
-            </nav>
+            <h1>
+                Análisis salarial
+            </h1>
+            <div class="nav-container">
+                <nav>
+                    <ul>
+                        <div class="nav-container-item">
+                            <li>
+                                <a href="./index.html">Home</a>
+                            </li>
+                        </div>
+                        <div class="nav-container-item">
+                            <li>
+                                <a href="./figuras.html">Figuras Geométricas</a>
+                            </li>
+                        </div>
+                        <div class="nav-container-item">
+                            <li>
+                                <a href="./descuentos.html">Descuentos</a>
+                            </li>
+                        </div>
+                        <div class="nav-container-item">
+                            <li>
+                                <a href="./estadistica.html">Estadistica</a>
+                            </li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
         <section>
-            <h2>
-                Salarios
-            </h2>
-            <form>
-                <label for="">
-                    Mediana salarios
-                </label> <br />
-                <input type="text" placeholder="Lista de salarios"> <br />
-                <button type="button" onclick="">Calcular</button>
-            </form>
-        </section>
-        <section>
-            <h2>
-                Salarios: top 10%
-            </h2>
-            <form>
-                <label>
-                    Mediana salarios top 10%
-                </label> <br />
-                <input type="text" placeholder=""> <br />
-                <button type="button" onclick="">Calcular</button>
-            </form>
+            <div class="item">
+                <h2>
+                    Salarios
+                </h2>
+                <form>
+                    <label for="">
+                        Mediana salarios
+                    </label> <br />
+                    <input type="text" placeholder="Lista de salarios"> <br />
+                    <button type="button" onclick="">Calcular</button>
+                </form>
+            </div>
+            <div class="item">
+                <h2>
+                    Salarios: top 10%
+                </h2>
+                <form>
+                    <label>
+                        Mediana salarios top 10%
+                    </label> <br />
+                    <input type="text" placeholder=""> <br />
+                    <button type="button" onclick="">Calcular</button>
+                </form>
+            </div>
         </section>
     </main>
     <script src="./salarios.js"></script>
