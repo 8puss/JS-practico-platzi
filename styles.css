@@ -6,88 +6,103 @@
 }
 
 html {
-    background: rgb(44, 43, 41); 
+    background: rgb(7, 7, 7); 
     font-size: 62.5%;
 }
 
 /*cuerpo*/
 body {
-    padding: 5rem;
+    padding: 30px;
     font-size: 2rem;
     color: rgb(247, 194, 20);
-    display: grid;
 }
 
-.container {
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+.title-container {
+    display: flex;
+    width: 360px;
 }
 
-.container h1 {
-    grid-column: 2 / 3;
-    text-align: center;
+.title-container img {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
 }
 
-.container .nav-container {
-    grid-column: 2 / 3;
-    grid-row: 2 / 2;
-    display: inline;
+.title-container h1 {
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+.title-container .nav-container {
     text-align: center;
 }
 
 .nav-container-item {
-    padding: 5px;
     display: inline-block;
 }
 
 ul {
     list-style: none;
-    display: inline;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 360px;
 }
 
-section {
-    display: grid;
+ul li:hover {
+    width: 300px;
+    background: rgb(247, 194, 20);
+    color: rgb(66, 101, 177);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+ul li {
+    padding: 50px;
+    border: 1px solid rgb(197, 168, 71);
+    border-radius: 5px;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: rgb(66, 101, 177);
+}
+
+.aside-nav-container {
+    display: flex;
+    flex-direction: column;
     padding: 2rem;
     justify-content: center;
     align-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
 }
 
-section .item:nth-child(1) {
-    grid-column: 2 / 3;
+main section {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 150px;
+    width: 360px;
+    border: 1px solid rgb(197, 168, 71);
+    border-radius: 5px;
+    padding: 50px;
 }
 
-section .item:nth-child(2) {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
+main section form {
+    margin: 20px;
 }
 
-section .item:nth-child(3) {
-    grid-column: 2 / 3;
-    grid-row: 3 / 3;
+main section form input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid rgb(197,168,71);
+    margin: 5px;
 }
 
-/*tarjeta de presentación*/
-
-.card-container {
-    width: 300px;
-    height: 500px;
-    background: rgb(241, 189, 15);
-    color: rgb(255, 255, 255);
-    border-radius: 50px;
-    overflow: hidden;
-    text-align: center;
-    display: grid;
-}
-
-.card-container p:nth-child(3) {
-    font-size: 1.2rem;
-}
-
-.card-container img {
-    width: 100%;
+main section form button {
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px 0 5px 5px;
 }

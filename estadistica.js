@@ -73,7 +73,7 @@ function calcularModa(lista) {
 }
 
 // interactuar con HTML
-function media() {
+function media_DOM() {
     let input_media = document.getElementById("media").value;
     let media_array = Array.from(input_media.split(','), Number);
     const resultado = calcularPromedio(media_array);
@@ -81,7 +81,7 @@ function media() {
     answer.innerText = "Media: " + resultado;
 }
 
-function moda() {
+function moda_DOM() {
     let input_moda = document.getElementById("moda").value;
     let moda_array = Array.from(input_moda.split(','), Number);
     const resultado = calcularModa(moda_array);
@@ -89,7 +89,7 @@ function moda() {
     answer.innerText = "Moda: " + resultado;
 }
 
-function mediana() {
+function mediana_DOM() {
     let input_mediana = document.getElementById("mediana").value;
     let mediana_array = Array.from(input_mediana.split(','), Number);   
     const resultado = calcularMediana(mediana_array);
