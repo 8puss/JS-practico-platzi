@@ -86,7 +86,11 @@ header .container .nav-container nav ul .nav-container-item li a img {
         margin-right: 100px;
     }
 
-    footer {
+    body .index-foot {
         margin-left: 30px;
+    }
+
+    footer {
+        margin-left: 100px;
     }
 }

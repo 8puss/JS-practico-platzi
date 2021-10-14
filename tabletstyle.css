@@ -1,4 +1,9 @@
 @media (min-width: 768px) {
+
+    .bodyindex {
+        margin: 0 30vw 0 35vw;
+    }
+
     .container .nav-container {
         /* display: none; */
     }
