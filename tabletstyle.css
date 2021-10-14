@@ -1,0 +1,25 @@
+@media (min-width: 768px) {
+    .container .nav-container {
+        /* display: none; */
+    }
+
+    header .container .nav-container nav ul .nav-container-item li a img {
+        width: 55px;
+        height: 55px;
+        padding: 8px;
+    }
+
+    main section {
+        margin: 10px 3px 0 3px;
+        width: 320px;
+        border: 1px solid rgb(197, 168, 71);
+        border-radius: 5px;
+        padding: 30px;
+    }
+
+    footer img {
+        width: 55px;
+        height: 55px;
+        padding: 10px;
+    }
+}

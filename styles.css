@@ -12,15 +12,16 @@ html {
 
 /*cuerpo*/
 body {
-    padding: 30px;
+    padding: 20px;
     font-size: 2rem;
     font-family: 'Quicksand', sans-serif;
     color: rgb(247, 194, 20);
+    position: relative;
 }
 
 /*navbar menu*/
 
-.aside-nav-container {
+main .aside-nav-container {
     display: flex;
     flex-direction: column;
     padding: 2rem;
@@ -28,12 +29,12 @@ body {
     align-content: center;
 }
 
-.title-container {
+main .aside-nav-container .title-container {
     display: flex;
     width: 360px;
 }
 
-.title-container img {
+main .aside-nav-container .nav-container li img {
     width: 45px;
     height: 45px;
     padding: 10px;
@@ -44,31 +45,32 @@ body {
     font-size: 5rem;
 }
 
+.container .nav-container {
+    /* display: none; */
+}
+
 .title-container .nav-container {
     text-align: center;
 }
 
-.nav-container-item {
-    display: inline-block;
-}
 
-ul {
+main .aside-nav-container ul {
     list-style: none;
     display: flex;
     flex-direction: column;
     margin-top: 50px;
-    width: 360px;
+    width: 325px;
 }
 
-ul li:hover {
-    width: 300px;
+main .aside-nav-container ul li:hover {
+    width: 250px;
     background: rgb(247, 194, 20);
     color: rgb(66, 101, 177);
     font-size: 3rem;
     font-weight: bold;
 }
 
-ul li {
+main .aside-nav-container ul li {
     padding: 15px;
     border: 1px solid rgb(197, 168, 71);
     border-radius: 5px;
@@ -77,16 +79,46 @@ ul li {
     align-items:center;
 }
 
+main .aside-nav-container ul li a {
+    text-decoration: none;
+}
+
 ul li img {
     width: 45px;
     height: 45px;
     padding: 10px;
 }
-
-ul li a {
-    text-decoration: none;
-
+header .container .nav-container nav ul {
+    list-style: none;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 30px;
 }
+
+header .container .nav-container nav ul .nav-container-item li a {
+    text-decoration: none;
+}
+
+header .container .nav-container nav ul .nav-container-item li a p {
+    display: none;
+}
+
+header .container .nav-container nav ul .nav-container-item li:hover {
+    background: rgb(247, 194, 20);
+    border-radius: 50%;
+}
+
+header .container .nav-container nav ul .nav-container-item li a img {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+}
+
+/* header .container .nav-container nav ul .nav-container-item li a img:hover {
+    width: 55px;
+    height: 55px;
+    padding: 10px;
+} */
 
 ul li a:hover {
     color: rgb(66, 101, 177);
@@ -95,18 +127,17 @@ ul li a:hover {
 /*main-content*/
 
 main section {
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin: 125px;
-    width: 360px;
+    margin: 20px 3px 0 3px;
+    width: 320px;
     border: 1px solid rgb(197, 168, 71);
     border-radius: 5px;
-    padding: 50px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 main section form {
-    margin: 20px;
+    margin: 10px;
 }
 
 main section h2 {
@@ -148,8 +179,11 @@ main section form button {
 
 footer {
     display: flex;
-    margin-top: 25px;
-    margin-left: 25px;
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 45px;
+    position: absolute;
+    bottom: 1;
 }
 
 footer img {
