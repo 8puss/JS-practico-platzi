@@ -115,7 +115,7 @@ main section h2 {
 
 main section form label {
     margin-left: 3px;
-    padding: 20px;
+/*     padding: 20px; */
 }
 
 main section form input {
@@ -127,6 +127,7 @@ main section form input {
 
 main section form button {
     border-radius: 5px;
+    border: 2px solid rgb(197,168,71);
     padding: 5px;
     margin: 5px 0 5px 5px;
 }
